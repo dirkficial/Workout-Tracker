@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>💪 Log a Workout</h1>
+
+    <div class="form-group">
+        <label>Workout Name (e.g., "Chest Day")</label>
+        <input type="text" id="workoutName" placeholder="Enter workout name">
+    </div>
+
+    <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+        <h3>Set 1</h3>
+        <div class="form-group">
+            <label>Exercise Name</label>
+            <input type="text" id="exercise" placeholder="e.g. Bench Press">
+        </div>
+        <div class="form-group">
+            <label>Muscle Group</label>
+            <select id="muscle">
+                <option value="Chest">Chest</option>
+                <option value="Back">Back</option>
+                <option value="Shoulder">Shoulder</option>
+                <option value="Legs">Legs</option>
+                <option value="Arms">Arms</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Weight (lbs)</label>
+            <input type="number" id="weight" placeholder="0.0">
+        </div>
+        <div class="form-group">
+            <label>Reps</label>
+            <input type="number" id="reps" placeholder="0">
+        </div>
+    </div>
+
+    <br>
+    <button onclick="submitWorkout()">Save Workout</button>
+    <div id="success-message">✅ Workout Saved Successfully!</div>
+</body>
+</html>
